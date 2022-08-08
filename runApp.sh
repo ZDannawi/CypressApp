@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 case $1 in
-    "--help") # display Help
+    "--help")
         echo "Welcome to the Cypress Runner"
         echo "You may pass in the following options: "
         echo -e '\t1. Pass --chrome to run on Chrome.'
@@ -18,4 +18,3 @@ case $1 in
         exit 1
     ;;
 esac
-# docker run -it -v $PWD:/e2e -w /e2e cypress/included:10.4.0
