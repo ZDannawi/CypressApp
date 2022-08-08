@@ -1,0 +1,14 @@
+{
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": false,
+        "stepDefinitions": "cypress/step-defs/**/"
+    },
+    "dependencies": {
+        "@badeball/cypress-cucumber-preprocessor": "^12.0.0",
+        "docker": "^1.0.0"
+    },
+    "devDependencies": {
+        "cypress": "^10.4.0",
+        "cypress-cucumber-preprocessor": "^4.3.1"
+    }
+}
