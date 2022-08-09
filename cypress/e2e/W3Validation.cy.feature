@@ -1,6 +1,4 @@
-Feature: Test Scenario 
-
-    Testing Things
+Feature: Testing and Validating Webpage Responses
 
     Scenario: Multimodal Page
         When I navigate to the W3 page: 'Multimodal'
