@@ -51,6 +51,19 @@ Then('I validate that all the links on the page go to another page',() => {
     })
 })
 
+/**
+ * 
+ * @param {*} element 
+ * 
+ * This function checks if the incoming element contains the href property.
+ * If that property length is > 0, we utilize the cy.request(...) functionality to make a request of that link
+ * The failOnStatusCode is set to false due to broken links that can cause this request to fail, as we
+ * want to check every link on the page to make sure of its response.
+ * 
+ * After making the initial request, we are then validating that the response from that request is 200. If we find
+ * a 404, we log it in the Cypress runner and continue down the chain.
+ */
+
 function validateLinkRequest(element) {
     if(element.prop('href').length > 0) {
         cy.request({
